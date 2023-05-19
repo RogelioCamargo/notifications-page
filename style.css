@@ -1,4 +1,16 @@
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: url("./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: url("./assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
 :root {
+  --bold-font: "PlusJakartaSans-ExtraBold", sans-serif;
+  --medium-font: "PlusJakartaSans-Medium", sans-serif;
   --black-color: hsl(0, 0%, 0%);
   --white-color: hsl(0, 0%, 100%);
   --red-color: hsl(1, 90%, 64%);
@@ -30,6 +42,7 @@ ul {
 body {
   font-size: 1.4rem;
   min-height: 100vh;
+  font-family: var(--medium-font);
 }
 
 button {
@@ -54,17 +67,16 @@ img {
 
 .notifs__header-info {
   display: flex;
+  font-family: var(--bold-font);
 }
 
 .notifs__title {
   font-size: 2rem;
   line-height: 1.25;
-  font-weight: 800;
   margin-right: 0.9rem;
 }
 
 .notifs__count {
-  font-weight: 800;
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--white-color);
@@ -136,12 +148,14 @@ img {
 
 .notif__post {
   color: var(--dark-grey-blue-color);
-  font-weight: 700;
+  font-family: var(--bold-font);
+  margin-left: 0.5rem;
 }
 
 .notif__group {
   color: var(--blue-color);
-  font-weight: 700;
+  font-family: var(--bold-font);
+  margin-left: 0.5rem;
 }
 
 .notif__desc {
@@ -149,8 +163,9 @@ img {
 }
 
 .notif__user {
-  font-weight: 800;
+  font-family: var(--bold-font);
   color: var(--black-color);
+  margin-right: 0.5rem;
 }
 
 .notif__timestamp {
