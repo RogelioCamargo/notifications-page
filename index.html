@@ -29,16 +29,21 @@
     <main>
       <section class="notifs">
         <header class="notifs__header">
-          <h1>
-            Notifications
-            <span class="notifs__count">3</span>
-          </h1>
+          <div class="notifs__header-info">
+            <h1 class="notifs__title">Notifications</h1>
+            <div class="notifs__count">3</div>
+          </div>
           <button class="notifs__mark-read-button">Mark all as read</button>
         </header>
         <ul class="notifs__list">
           <li class="notif notif--unread">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Mark Webber</span>
                 reacted to your recent post
                 <span class="notif__post">My first tournament today!</span>
@@ -47,8 +52,13 @@
             </div>
           </li>
           <li class="notif notif--unread">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Angela Gray</span>
                 followed you
               </p>
@@ -56,8 +66,13 @@
             </div>
           </li>
           <li class="notif notif--unread">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jocab Thompson"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Jacob Thompson</span>
 
                 has joined your group
@@ -67,8 +82,13 @@
             </div>
           </li>
           <li class="notif notif--message">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Rizky Hasanuddin</span>
 
                 sent you a private message
@@ -81,18 +101,33 @@
               improving my game.
             </p>
           </li>
-          <li class="notif notif--comment">
+          <li class="notif">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Kimberly Smith</span>
                 commented on your picture
               </p>
               <p class="notif__timestamp">1 week ago</p>
             </div>
+            <img
+              src="./assets/images/image-chess.webp"
+              alt="User playing chess"
+              class="notif__subject-image"
+            />
           </li>
           <li class="notif">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Nathan Peterson</span>
                 reacted to your recent post
                 <span class="notif__post"
@@ -103,8 +138,13 @@
             </div>
           </li>
           <li class="notif">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim"
+              class="notif__avatar"
+            />
             <div class="notif__info">
-              <p>
+              <p class="notif__desc">
                 <span class="notif__user">Anna Kim</span>
                 left the group
                 <span class="notif__group">Chess Club</span>
@@ -120,7 +160,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Rogelio Camargo</a>.
     </footer>
   </body>
 </html>
