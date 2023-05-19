@@ -143,7 +143,6 @@ img {
   border-radius: 50%;
   margin-left: 0.6rem;
   margin-bottom: 0.1rem;
-
 }
 
 .notif--message {
@@ -159,6 +158,7 @@ img {
 .notif__info {
   line-height: 1.3;
   color: var(--dark-grey-blue-color);
+  flex: 1;
 }
 
 .notif__message {
@@ -197,6 +197,27 @@ img {
 .notif__subject-image {
   height: 4rem;
   width: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .notifs__mark-read-button:hover {
+    color: var(--blue-color);
+  }
+
+  .notif__user:hover,
+  .notif__group:hover,
+  .notif__post:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+  }
+
+  .notif__message {
+    padding: 2rem;
+  }
+
+  .notif__message:hover {
+    background-color: var(--light-grey-blue-1-color);
+  }
 }
 
 /* Footer */
