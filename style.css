@@ -98,16 +98,17 @@ img {
 
 .notif--unread {
   background-color: var(--snow-color);
+  border-radius: 0.8rem;
 }
 
 .notif--unread .notif__desc::after {
   content: "";
-	display: inline-block;
+  display: inline-block;
   height: 0.8rem;
   width: 0.8rem;
   background-color: var(--red-color);
   border-radius: 50%;
-	margin-left: 0.6rem;
+  margin-left: 0.6rem;
 }
 
 .notif--message {
