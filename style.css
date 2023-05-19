@@ -47,6 +47,7 @@ body {
 
 button {
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 img {
@@ -55,6 +56,26 @@ img {
 
 .notifs {
   width: 37.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: var(--snow-color);
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.6rem;
+  }
+
+  .notifs {
+    width: 73rem;
+    padding: 3rem;
+    background-color: var(--white-color);
+    margin-top: 6.5rem;
+    border-radius: 1.5rem;
+  }
 }
 
 /* Notifications Header */
@@ -121,6 +142,8 @@ img {
   background-color: var(--red-color);
   border-radius: 50%;
   margin-left: 0.6rem;
+  margin-bottom: 0.1rem;
+
 }
 
 .notif--message {
@@ -155,7 +178,6 @@ img {
 .notif__group {
   color: var(--blue-color);
   font-family: var(--bold-font);
-  margin-left: 0.5rem;
 }
 
 .notif__desc {
@@ -165,7 +187,6 @@ img {
 .notif__user {
   font-family: var(--bold-font);
   color: var(--black-color);
-  margin-right: 0.5rem;
 }
 
 .notif__timestamp {
