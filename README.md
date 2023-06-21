@@ -1,6 +1,8 @@
 # Frontend Mentor - Notifications Page
 A user interface component designed to display and manage notifications for users. It provides a visual representation of unread and read notifications, allowing users to easily track and interact with their notifications.
 
+[Live Demo](https://rogeliocamargo.github.io/notifications-page/)
+
 ## Features
 - Distinguish between "unread" and "read" notifications: Users should be able to differentiate between unread and read notifications through visual cues or indicators. Unread notifications should stand out to draw attention.
 - Mark all as read: Implement functionality that allows users to mark all notifications as read. This action should toggle the visual state of unread notifications and set the count of unread messages to zero.
